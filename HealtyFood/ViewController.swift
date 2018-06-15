@@ -7,16 +7,27 @@
 //
 
 import UIKit
+import CoreML
+import Vision
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet weak var imageView: UIImageView!
+    
+    let imagePicker = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
- 
         
+        imagePicker.delegate = self
+        imagePicker.sourceType = .photoLibrary //TODO: change to .camera on a real phone
+        imagePicker.allowsEditing = false //TODO: allow editing
         
     }
 
-
+    @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
 }
 

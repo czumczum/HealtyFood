@@ -12,6 +12,8 @@
 		7563956520D41D1700763A07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7563956320D41D1700763A07 /* Main.storyboard */; };
 		7563956720D41D1800763A07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7563956620D41D1800763A07 /* Assets.xcassets */; };
 		7563956A20D41D1800763A07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7563956820D41D1800763A07 /* LaunchScreen.storyboard */; };
+		7563957220D41E8D00763A07 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7563957120D41E8D00763A07 /* Inceptionv3.mlmodel */; };
+		7563957420D41F4300763A07 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7563957320D41F4300763A07 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		7563956620D41D1800763A07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7563956920D41D1800763A07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7563956B20D41D1800763A07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7563957120D41E8D00763A07 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		7563957320D41F4300763A07 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				7563956620D41D1800763A07 /* Assets.xcassets */,
 				7563956820D41D1800763A07 /* LaunchScreen.storyboard */,
 				7563956B20D41D1800763A07 /* Info.plist */,
+				7563957320D41F4300763A07 /* README.md */,
+				7563957120D41E8D00763A07 /* Inceptionv3.mlmodel */,
 			);
 			path = HealtyFood;
 			sourceTree = "<group>";
@@ -124,6 +130,7 @@
 			files = (
 				7563956A20D41D1800763A07 /* LaunchScreen.storyboard in Resources */,
 				7563956720D41D1800763A07 /* Assets.xcassets in Resources */,
+				7563957420D41F4300763A07 /* README.md in Resources */,
 				7563956520D41D1700763A07 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7563956220D41D1700763A07 /* ViewController.swift in Sources */,
+				7563957220D41E8D00763A07 /* Inceptionv3.mlmodel in Sources */,
 				7563956020D41D1700763A07 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

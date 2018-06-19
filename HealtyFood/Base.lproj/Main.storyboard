@@ -21,9 +21,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pr0-Hv-8VH">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Please pick a photo." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mz-T0-Tgw">
-                                <rect key="frame" x="0.0" y="64" width="375" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Please pick a photo." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mz-T0-Tgw">
+                                <rect key="frame" x="0.0" y="64" width="375" height="39.5"/>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -31,10 +30,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="8mz-T0-Tgw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Un-87-8Po"/>
                             <constraint firstItem="pr0-Hv-8VH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4Nd-th-Ioc"/>
                             <constraint firstItem="pr0-Hv-8VH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Abq-mY-njL"/>
                             <constraint firstItem="pr0-Hv-8VH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IEN-EL-cEj"/>
                             <constraint firstItem="pr0-Hv-8VH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="m9C-j6-ogc"/>
+                            <constraint firstItem="8mz-T0-Tgw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wJ8-3f-m5G"/>
+                            <constraint firstItem="8mz-T0-Tgw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="z60-t3-Vo2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

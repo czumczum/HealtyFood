@@ -64,12 +64,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 let confidence = firstResult.confidence
                 
                 switch confidence {
-                case (0...0.55):
+                case (0.3...0.71):
                     let secondResult = results[1]
-                    self.textDescriptionField.text = String(" \(firstPrediction) \(Int(100 * firstResult.confidence))%\n \(secondResult.identifier) \(Int(100 * secondResult.confidence))%")
+                    guard let secondPrediction = String(secondResult.identifier).components(separatedBy: ",").first else {
+                        fatalError("There's no second prediction!")
+                    }
+                    self.textDescriptionField.text = String(" \(firstPrediction) \(Int(100 * firstResult.confidence))%\n \(secondPrediction) \(Int(100 * secondResult.confidence))%")
                     self.adjustUITextViewHeight(arg: self.textDescriptionField)
-                case (0.56...0.8):
-                    self.textDescriptionField.text = String(" \(firstPrediction) \(100 * firstResult.confidence)%")
+                case (0.71...0.8):
+                    self.textDescriptionField.text = String(" \(firstPrediction) \(Int(100 * firstResult.confidence))%")
                     self.adjustUITextViewHeight(arg: self.textDescriptionField)
                 default:
                     self.textDescriptionField.text = "Image cannot be identified at this time 😔"
@@ -97,11 +100,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     // MARK: - Helpers for UI
     func adjustUITextViewHeight(arg : UITextView)
     {
-        arg.translatesAutoresizingMaskIntoConstraints = true
         arg.sizeToFit()
-        arg.isScrollEnabled = false
-        arg.textAlignment = .center
-        arg.increaseSize(2)
     }
     
 }
